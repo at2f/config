@@ -58,13 +58,66 @@
       "Locked": true,
       "StartPage": "homepage-locked"
     },
-    "PrimaryPassword": false,
+    "ManagedBookmarks": [
+      {
+        "toplevel_name": "Marques-pages Cyber-Base"
+      },
+      {
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "name": "Gmail"
+      },
+      {
+        "url": "https://outlook.live.com/owa/",
+        "name": "Outlook"
+      },
+      {
+        "url": "https://login.orange.fr/?return_url=https%3A%2F%2Frms.orange.fr%2Fmail%2Finbox%3F",
+        "name": "Mail Orange"
+      },
+      {
+        "url": "https://www.laposte.net/accueil",
+        "name": "Webmail La Poste"
+      },
+      {
+        "url": "https://login.yahoo.com/",
+        "name": "Yahoo Mail"
+      },
+      {
+        "url": "https://www.sfr.fr/cas/login?service=https%3A%2F%2Fwebmail.sfr.fr%2Fwebmail%2Fj_spring_cas_security_check",
+        "name": "SFR Mail"
+      },
+      {
+        "url": "https://caf.fr/",
+        "name": "Caf"
+      },
+      {
+        "url": "https://www.pole-emploi.fr/accueil/",
+        "name": "Pôle Emploi"
+      },
+      {
+        "url": "https://www.ameli.fr/",
+        "name": "Assurance Maladie"
+      },
+      {
+        "url": "https://www.service-public.fr/",
+        "name": "Service Public"
+      },
+      {
+        "url": "https://www.impots.gouv.fr/portail",
+        "name": "impots.gouv.fr"
+      },
+      {
+        "url": "https://ants.gouv.fr/",
+        "name": "ANTS"
+      }
+    ],
     "NetworkPrediction": false,
     "NewTabPage": true,
     "NoDefaultBookmarks": true,
     "OfferToSaveLogins": false,
     "OverridePostUpdatePage": "",
     "PasswordManagerEnabled": false,
+    "PrimaryPassword": false,
     "PSFjs": {
       "Enabled": false
     },
