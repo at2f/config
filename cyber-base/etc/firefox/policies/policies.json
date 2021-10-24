@@ -1,0 +1,150 @@
+{
+  "policies": {
+    "BlockAboutAddons": true,
+    "BlockAboutConfig": true,
+    "BlockAboutProfiles": true,
+    "Cookies": {
+      "AcceptThirdParty": "from-visited",
+      "ExpireAtSessionEnd": true,
+      "RejectTracker": true,
+      "Locked": true
+    },
+    "DisableSetDesktopBackground": true,
+    "DisableMasterPasswordCreation": true,
+    "DisableDeveloperTools": true,
+    "DisableFirefoxAccounts": true,
+    "DisablePocket": true,
+    "DisablePrivateBrowsing": true,
+    "DisableSafeMode": true,
+    "DNSOverHTTPS": {
+      "Enabled": false,
+      "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
+      "Locked": true
+    },
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true
+    },
+    "ExtensionSettings": {
+      "*": {
+        "blocked_install_message": "L'installation d'extensions n'est pas autorisée.",
+        "installation_mode": "blocked"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      },
+      "langpack-fr@firefox.mozilla.org": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/français-language-pack/latest.xpi"
+      },
+      "French-GC@grammalecte.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/grammalecte-fr/latest.xpi"
+      }
+    },
+    "ExtensionUpdate": true,
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "Homepage": {
+      "Locked": true,
+      "StartPage": "homepage-locked"
+    },
+    "ManagedBookmarks": [
+      {
+        "toplevel_name": "Accès rapide"
+      },
+      {
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "name": "Gmail"
+      },
+      {
+        "url": "https://outlook.live.com/owa/",
+        "name": "Outlook"
+      },
+      {
+        "url": "https://login.orange.fr/?return_url=https%3A%2F%2Frms.orange.fr%2Fmail%2Finbox%3F",
+        "name": "Mail Orange"
+      },
+      {
+        "url": "https://www.laposte.net/accueil",
+        "name": "Webmail La Poste"
+      },
+      {
+        "url": "https://login.yahoo.com/",
+        "name": "Yahoo Mail"
+      },
+      {
+        "url": "https://www.sfr.fr/cas/login?service=https%3A%2F%2Fwebmail.sfr.fr%2Fwebmail%2Fj_spring_cas_security_check",
+        "name": "SFR Mail"
+      },
+      {
+        "url": "https://caf.fr/",
+        "name": "Caf"
+      },
+      {
+        "url": "https://www.pole-emploi.fr/accueil/",
+        "name": "Pôle Emploi"
+      },
+      {
+        "url": "https://www.ameli.fr/",
+        "name": "Assurance Maladie"
+      },
+      {
+        "url": "https://www.service-public.fr/",
+        "name": "Service Public"
+      },
+      {
+        "url": "https://www.impots.gouv.fr/portail",
+        "name": "impots.gouv.fr"
+      },
+      {
+        "url": "https://ants.gouv.fr/",
+        "name": "ANTS"
+      }
+    ],
+    "NetworkPrediction": false,
+    "NewTabPage": true,
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "OverridePostUpdatePage": "",
+    "PasswordManagerEnabled": false,
+    "PrimaryPassword": false,
+    "PSFjs": {
+      "Enabled": false
+    },
+    "PopupBlocking": {
+      "Allow": ["https://mail.google.com"],
+      "Default": true,
+      "Locked": false
+    },
+    "PromptForDownloadLocation": false,
+    "Proxy": {
+      "Mode": "system",
+      "Locked": true,
+      "Passthrough": "",
+      "AutoLogin": false,
+      "UseProxyForDNS": false
+    },
+    "RequestedLocales": "fr-FR,fr,en-US,en",
+    "SanitizeOnShutdown": true,
+    "SearchBar": "unified",
+    "SearchSuggestEnabled": true,
+    "ShowHomeButton": false,
+    "UserMessaging": {
+      "WhatsNew": false,
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": false
+    }
+  }
+}
