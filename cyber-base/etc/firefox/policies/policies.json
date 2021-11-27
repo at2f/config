@@ -55,12 +55,17 @@
       "Locked": true
     },
     "Homepage": {
+      "URL": "https://at2f.ticncube.com",
       "Locked": true,
       "StartPage": "homepage-locked"
     },
     "ManagedBookmarks": [
       {
         "toplevel_name": "Accès rapide"
+      },
+      {
+        "url": "https://at2f.ticncube.com",
+        "name": "Connexion Cyber-Base"
       },
       {
         "url": "https://mail.google.com/mail/u/0/#inbox",
