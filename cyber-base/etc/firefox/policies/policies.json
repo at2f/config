@@ -64,6 +64,10 @@
         "toplevel_name": "Accès rapide"
       },
       {
+        "url": "https://at2f.proxyepn.org",
+        "name": "Compte ProxyEPN (Cyber-Base)"
+      },
+      {
         "url": "https://mail.google.com/mail/u/0/#inbox",
         "name": "Gmail"
       },
