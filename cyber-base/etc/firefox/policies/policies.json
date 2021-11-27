@@ -64,10 +64,6 @@
         "toplevel_name": "Accès rapide"
       },
       {
-        "url": "https://at2f.ticncube.com",
-        "name": "Connexion Cyber-Base"
-      },
-      {
         "url": "https://mail.google.com/mail/u/0/#inbox",
         "name": "Gmail"
       },
@@ -143,7 +139,7 @@
     "SanitizeOnShutdown": true,
     "SearchBar": "unified",
     "SearchSuggestEnabled": true,
-    "ShowHomeButton": false,
+    "ShowHomeButton": true,
     "UserMessaging": {
       "WhatsNew": false,
       "ExtensionRecommendations": false,
