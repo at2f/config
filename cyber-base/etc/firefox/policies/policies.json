@@ -4,9 +4,8 @@
     "BlockAboutConfig": true,
     "BlockAboutProfiles": true,
     "Cookies": {
-      "AcceptThirdParty": "from-visited",
+      "Behavior": "limit-foreign",
       "ExpireAtSessionEnd": true,
-      "RejectTracker": true,
       "Locked": true
     },
     "DisableSetDesktopBackground": true,
@@ -49,8 +48,10 @@
     "FirefoxHome": {
       "Search": true,
       "TopSites": false,
+      "SponsoredTopSites": false,
       "Highlights": false,
       "Pocket": false,
+      "SponsoredPocket": false,
       "Snippets": false,
       "Locked": true
     },
