@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Définition des variables nécessaires aux messages spéciaux d'anniversaires
 aujourdhui=`date +"%d/%m"`
 annee_en_cours=`date +"%Y"`
 
@@ -131,9 +132,13 @@ elif [ $aujourdhui = '24/12' ]; then
     shutdown now
 
 else
+    # Liste les liens existants sur la page de connexion Téïcée, et les envoie dans le fichier « page_connexion_teicee »
     lynx -listonly -nonumbers -dump https://at2f.ticncube.com > /tmp/page_connexion_teicee
+    # Filtre les liens pour ne garder que celui vers le bouton de déconnexion, et l'envoie dans le fichier « bouton_deconnexion_teicee »
     grep logout /tmp/page_connexion_teicee > /tmp/bouton_deconnexion_teicee
+    # Ouvre le lien du bouton de déconnexion avec lynx, et cache la sortie avec nohup
     cat /tmp/bouton_deconnexion_teicee | nohup lynx -dump -accept_all_cookies - > /tmp/nohup.out 2>&1 &
+    # Ajout d'un délai de 6s pour laisser le temps à lynx d'atteindre la page de déconnexion, et affiche aux usagers ce que l'extinction fait
     printf "Déconnexion des comptes en ligne…\n"
     sleep 2
     printf "Suppression des documents sur l’ordinateur…\n"
