@@ -3,7 +3,21 @@
 aujourdhui=`date +"%d/%m"`
 annee_en_cours=`date +"%Y"`
 
-if [ $aujourdhui = '12/03' ]; then
+if [ $aujourdhui = '24/01' ]; then
+    age_at2f=`expr $annee_en_cours - 1973`
+    printf "Aujourd’hui les Ateliers de la Fontaine ont $age_at2f ans. Joyeux anniversaire !\n"
+    lynx -listonly -nonumbers -dump https://at2f.ticncube.com > /tmp/page_connexion_teicee
+    grep logout /tmp/page_connexion_teicee > /tmp/bouton_deconnexion_teicee
+    cat /tmp/bouton_deconnexion_teicee | nohup lynx -dump -accept_all_cookies - > /tmp/nohup.out 2>&1 &
+    printf "Déconnexion des comptes en ligne…\n"
+    sleep 2
+    printf "Suppression des documents sur l’ordinateur…\n"
+    sleep 2
+    printf "Suppression de l’historique internet…\n"
+    sleep 2
+    shutdown now
+
+elif [ $aujourdhui = '12/03' ]; then
     age_web=`expr $annee_en_cours - 1989`
     printf "Aujourd’hui le Web a $age_web ans. Joyeux anniversaire !\n"
     lynx -listonly -nonumbers -dump https://at2f.ticncube.com > /tmp/page_connexion_teicee
