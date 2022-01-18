@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 # Définition des variables nécessaires aux messages spéciaux d'anniversaires
 aujourdhui=`date +"%d/%m"`
 annee_en_cours=`date +"%Y"`
