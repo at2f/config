@@ -146,6 +146,8 @@ elif [ $aujourdhui = '24/12' ]; then
     shutdown now
 
 else
+    # Affiche un message indiquant que l'extinction est en cours
+    printf "Extinction de l’ordinateur en cours…\n"
     # Liste les liens existants sur la page de connexion Téïcée, et les envoie dans le fichier « page_connexion_teicee »
     lynx -listonly -nonumbers -dump https://at2f.ticncube.com > /tmp/page_connexion_teicee
     # Filtre les liens pour ne garder que celui vers le bouton de déconnexion, et l'envoie dans le fichier « bouton_deconnexion_teicee »
