@@ -80,6 +80,6 @@ elif [[ ${aujourdhui} = '24/12' ]]; then
 
 else
     # Affiche un message indiquant que l'extinction est en cours
-    printf "Extinction de l’ordinateur en cours…\n"
+    printf "Extinction de l’ordinateur en cours, ne fermez pas cette fenêtre.\n"
     extinction_du_poste
 fi
