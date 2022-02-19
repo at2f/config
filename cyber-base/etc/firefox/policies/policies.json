@@ -21,7 +21,7 @@
       "Locked": true
     },
     "EnableTrackingProtection": {
-      "Value": true,
+      "Value": false,
       "Locked": true,
       "Cryptomining": true,
       "Fingerprinting": true
