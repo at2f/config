@@ -5,6 +5,12 @@ aujourdhui=$(date +"%d/%m")
 annee_en_cours=$(date +"%Y")
 
 extinction_du_poste () {
+  # Liste les liens existants sur la page de connexion Téïcée
+  lynx -listonly -nonumbers -dump https://at2f.ticncube.com |\
+  # Filtre les liens pour ne garder que celui vers le bouton de déconnexion
+  grep logout |\
+  # Ouvre le lien du bouton de déconnexion avec lynx, et cache la sortie avec nohup
+  nohup lynx -dump -accept_all_cookies - &> /dev/null &
   # Affiche un compte à rebours avant de lancer l’extinction
   for secondes in {5..1} ; do
     clear
@@ -16,15 +22,6 @@ extinction_du_poste () {
     printf 'Fermez cette fenêtre pour annuler.'
     sleep 1
   done
-  clear
-  # Liste les liens existants sur la page de connexion Téïcée
-  lynx -listonly -nonumbers -dump https://at2f.ticncube.com |\
-  # Filtre les liens pour ne garder que celui vers le bouton de déconnexion
-  grep logout |\
-  # Ouvre le lien du bouton de déconnexion avec lynx, et cache la sortie avec nohup
-  nohup lynx -dump -accept_all_cookies - &> /dev/null &
-  # Attendre que lynx ait atteint la page de déconnexion, puis éteindre
-  wait "$(pidof lynx)"
   shutdown now
 }
 
