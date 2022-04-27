@@ -8,4 +8,4 @@ rm -f ~/installation_pc_cyber-base.sh
 
 #sudo smbpasswd -x usager
 read -rp 'Entrer le mot de passe du partage SAMBA pour recevoir les scans : ' mdp_samba
-echo -e "${mdp_samba}\n${mdp_samba}\n" | sudo smbpasswd -aes usager
+echo -ne "${mdp_samba}\n${mdp_samba}\n" | sudo smbpasswd -aes usager
