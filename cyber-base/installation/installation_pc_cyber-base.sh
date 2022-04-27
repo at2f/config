@@ -334,8 +334,8 @@ sudo cp uBlock0@raymondhill.net.json /usr/lib/mozilla/managed-storage/
 notify-send --hint int:transient:1 'LibreOffice' 'Activer l’interface en onglets pour tous les logiciels de la suite : Affichage -> Interface utilisateur -> Onglets'
 libreoffice --writer
 wait $(pidof libreoffice)
-notify-send --hint int:transient:1 'Firefox' 'Ajouter le bouton « Prendre une capture d’écran » à la barre d’outils'
-firefox
+notify-send --hint int:transient:1 'Firefox' 'Changer le moteur de recherche & ajouter le bouton de capture d’écran à la barre d’outils.'
+firefox about:preferences#search
 wait $(pidof firefox)
 
 
