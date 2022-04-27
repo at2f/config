@@ -5,3 +5,5 @@
 
 echo 'Appliquation des corrections…'
 rm -f ~/installation_pc_cyber-base.sh
+
+firefox about:preferences#search
