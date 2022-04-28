@@ -5,3 +5,4 @@
 
 echo 'Appliquation des corrections…'
 rm -f ~/installation_postes_cyber-base.sh
+echo 'Corrections terminées.'
