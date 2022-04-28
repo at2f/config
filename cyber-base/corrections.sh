@@ -69,3 +69,10 @@ WantedBy=multi-user.target
 EOF
 # Démarrer le service
 sudo systemctl enable deconnexion_teicee
+
+# Régler le problème de fenêtre intempestive avec le filtrage réseau Téïcée
+sudo tee -a /etc/NetworkManager/NetworkManager.conf << EOF > /dev/null
+
+[connectivity]
+enabled=false
+EOF
