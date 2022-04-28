@@ -5,12 +5,8 @@ aujourdhui=$(date +"%d/%m")
 annee_en_cours=$(date +"%Y")
 
 extinction_du_poste () {
-  # Liste les liens existants sur la page de connexion Téïcée
-  lynx -listonly -nonumbers -dump https://at2f.ticncube.com |\
-  # Filtre les liens pour ne garder que celui vers le bouton de déconnexion
-  grep logout |\
-  # Ouvre le lien du bouton de déconnexion avec lynx, et cache la sortie avec nohup
-  nohup lynx -dump -accept_all_cookies - &> /dev/null &
+  # Cache le curseur du terminal
+  tput civis
   # Affiche un compte à rebours avant de lancer l’extinction
   for secondes in {5..1} ; do
     clear
@@ -44,7 +40,7 @@ case "${aujourdhui}" in
     printf " Contournement du pare-feu…\n" ; sleep 2
     printf " Brèche de sécurité trouvée ! Connexion établie.\n" ; sleep 1
     for pourcentage in {1..100} ; do
-      printf " Téléchargement de l’archive « codes_nucléaires_secret_défense.tar.gz » : %s %%\r" "${pourcentage}"
+      printf " Téléchargement de l’archive « codes_nucléaires_secret_défense.tar.gz » : %s %%\r" "${pourcentage}"
       sleep 0.05
     done
     printf "\n" ; sleep 0.2
