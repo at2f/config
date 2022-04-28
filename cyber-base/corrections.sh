@@ -8,6 +8,8 @@ echo 'Appliquation des corrections…'
 
 # Ne pas afficher la corbeille dans « Dash to Dock » (barre latérale)
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+sudo apt install -y imagemagick
+
 
 ### AJOUTER LES CORRECTIONS AVANT CETTE LIGNE ###
 echo 'Corrections terminées.'
