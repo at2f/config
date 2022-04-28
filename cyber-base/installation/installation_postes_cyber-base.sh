@@ -90,6 +90,8 @@ sudo apt install -y celluloid
 sudo apt install -y gimp
 # Installer ImageMagick pour les scripts de conversion d’images/pdf
 sudo apt install -y imagemagick
+# Permettre à ImageMagick de convertir des images en PDF
+sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
 # Installer les paquets de traduction manquants
 sudo apt install -y $(check-language-support)
 # Supprimer quelques paquets inutiles pour les postes publics
