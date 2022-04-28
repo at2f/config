@@ -4,22 +4,10 @@
 # Elles seront appliquées lors de l’exécution du script de maintenance.
 
 echo 'Appliquation des corrections…'
-rm -f ~/installation_pc_cyber-base.sh
-rm -f ~/installation_postes_cyber-base.sh
-# Créer le service qui lancera le script de déconnexion à l’extinction de l’ordinateur
-sudo tee /etc/systemd/system/deconnexion_teicee.service << EOF > /dev/null
-[Unit]
-Description=Lance le script de déconnexion du compte Téïcée
-After=network.target
+### AJOUTER LES CORRECTIONS APRÈS CETTE LIGNE ###
 
-[Service]
-Type=oneshot
-RemainAfterExit=true
-ExecStop=/usr/local/sbin/deconnexion_teicee.sh
+# Ne pas afficher la corbeille dans « Dash to Dock » (barre latérale)
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 
-[Install]
-WantedBy=multi-user.target
-EOF
-# Démarrer le service
-sudo systemctl enable deconnexion_teicee
+### AJOUTER LES CORRECTIONS AVANT CETTE LIGNE ###
 echo 'Corrections terminées.'
