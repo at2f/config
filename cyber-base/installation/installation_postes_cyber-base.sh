@@ -177,6 +177,8 @@ sudo cp fond_ecran_postes_usagers_cyber-base.png /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fond_ecran_postes_usagers_cyber-base.png
 # Définir les favoris dans « Dash to Dock » (barre latérale)
 gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-startcenter.desktop', 'eteindre.desktop']"
+# Ne pas afficher la corbeille dans « Dash to Dock » (barre latérale)
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 # Ne pas afficher le dossier personnel sur le bureau
 gsettings set org.gnome.shell.extensions.ding show-home false
 # Ne pas afficher le bureau dans les raccourcis
