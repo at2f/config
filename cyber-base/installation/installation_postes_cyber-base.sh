@@ -228,7 +228,7 @@ EOF
 # Rendre le script exécutable
 sudo chmod 755 /usr/local/sbin/deconnexion_teicee.sh
 # Créer le service qui lancera le script de déconnexion à l’extinction de l’ordinateur
-sudo After=network.targettee /etc/systemd/system/deconnexion_teicee.service << EOF > /dev/null
+sudo tee /etc/systemd/system/deconnexion_teicee.service << EOF > /dev/null
 [Unit]
 Description=Lance le script de déconnexion du compte Téïcée
 After=network.target
