@@ -243,6 +243,12 @@ WantedBy=multi-user.target
 EOF
 # Démarrer le service
 sudo systemctl enable deconnexion_teicee
+# Régler le problème de fenêtre intempestive avec le filtrage réseau Téïcée
+sudo tee -a /etc/NetworkManager/NetworkManager.conf << EOF > /dev/null
+
+[connectivity]
+enabled=false
+EOF
 
 
 
@@ -474,14 +480,6 @@ exit 0
 # IPv6 -> DNS : 2606:4700:4700::1113,2606:4700:4700::1003
 # Plus de renseignements à cette adresse https://community.cloudflare.com/t/community-tip-best-practices-for-1-1-1-1-for-families/160496
 
-
-
-# Régler le problème de fenêtre intempestive avec le filtrage réseau Téïcée
-sudo tee -a /etc/NetworkManager/NetworkManager.conf << EOF > /dev/null
-
-[connectivity]
-enabled=false
-EOF
 
 
 # Créer la commande « oust » qui permet de se déconnecter
