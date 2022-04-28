@@ -217,9 +217,9 @@ sudo tee /usr/local/sbin/deconnexion_teicee.sh << EOF > /dev/null
 #!/usr/bin/bash
 
 # Liste les liens existants sur la page de connexion Téïcée
-lynx -listonly -nonumbers -dump https://at2f.ticncube.com |\
+lynx -listonly -nonumbers -dump https://at2f.ticncube.com |\\
 # Filtre les liens pour ne garder que celui vers le bouton de déconnexion
-grep logout |\
+grep logout |\\
 # Ouvre le lien du bouton de déconnexion avec lynx, et cache la sortie avec nohup
 nohup lynx -dump -accept_all_cookies - &> /dev/null &
 # Ajouter un délai pour laisser le temps à lynx d’atteindre la page de déconnexion
@@ -235,7 +235,7 @@ Description=Lance le script de déconnexion du compte Téïcée
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStop=/usr/local/sbin/test.sh
+ExecStop=/usr/local/sbin/deconnexion_teicee.sh
 
 [Install]
 WantedBy=multi-user.target
