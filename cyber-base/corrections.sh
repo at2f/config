@@ -65,7 +65,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStop=/usr/local/sbin/test.sh
+ExecStop=/usr/local/sbin/deconnexion_teicee.sh
 
 [Install]
 WantedBy=multi-user.target
