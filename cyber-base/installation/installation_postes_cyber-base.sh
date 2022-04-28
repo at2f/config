@@ -88,6 +88,8 @@ sudo apt install -y libreoffice
 sudo apt install -y celluloid
 # Installer GIMP
 sudo apt install -y gimp
+# Installer ImageMagick pour les scripts de conversion d’images/pdf
+sudo apt install -y imagemagick
 # Installer les paquets de traduction manquants
 sudo apt install -y $(check-language-support)
 # Supprimer quelques paquets inutiles pour les postes publics
