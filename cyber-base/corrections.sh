@@ -6,9 +6,6 @@
 echo 'Appliquation des corrections…'
 rm -f ~/installation_pc_cyber-base.sh
 
-firefox about:preferences#search
-wait $(pidof firefox)
-
 # Réactiver la possibilité de se déconnecter
 gsettings reset org.gnome.desktop.lockdown disable-log-out
 # Réactiver la possibilité de changer d’utilisateur
