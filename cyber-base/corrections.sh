@@ -6,10 +6,7 @@
 echo 'Appliquation des corrections…'
 ### AJOUTER LES CORRECTIONS APRÈS CETTE LIGNE ###
 
-# Ne pas afficher la corbeille dans « Dash to Dock » (barre latérale)
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-sudo apt install -y imagemagick
-
+sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
 
 ### AJOUTER LES CORRECTIONS AVANT CETTE LIGNE ###
 echo 'Corrections terminées.'
