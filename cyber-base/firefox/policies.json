@@ -132,7 +132,8 @@
       "Enabled": false
     },
     "PopupBlocking": {
-      "Allow": ["https://mail.google.com"],
+      "Allow": ["https://mail.google.com",
+                "https://www.canva.com"],
       "Default": true,
       "Locked": false
     },
