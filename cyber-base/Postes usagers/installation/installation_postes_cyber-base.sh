@@ -1,10 +1,6 @@
 #!/usr/bin/bash
 
 
-# Créer le mot de passe du partage SAMBA
-read -rp 'Entrer le mot de passe du partage SAMBA pour recevoir les scans : ' mdp_samba
-
-
 bash ./modules/configurer_gestionnaire_de_paquets.sh
 bash ./modules/configurer_explorateur_de_fichiers
 bash ./modules/configurer_interface.sh
