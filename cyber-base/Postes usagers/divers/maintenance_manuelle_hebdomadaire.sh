@@ -4,7 +4,7 @@
 cd $(mktemp -d)
 
 # Appliquer les modifications présentes dans le script « corrections.sh »
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/corrections.sh
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/corrections.sh
 chmod +x corrections.sh
 ./corrections.sh
 
@@ -28,11 +28,11 @@ sudo rsync -av --delete ./firefox/* /usr/local/bin/Firefox/
 sudo chown -R root:root /usr/local/bin/Firefox
 
 # Télécharger le fichier de configuration de Firefox
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/firefox/policies.json
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/policies.json
 # Installer le fichier de configuration de Firefox
 sudo cp policies.json /etc/firefox/policies/
 # Télécharger le fichier de configuration de uBlock Origin
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/firefox/uBlock0%40raymondhill.net.json
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/uBlock0%40raymondhill.net.json
 # Installer le fichier de configuration de uBlock Origin
 sudo cp uBlock0@raymondhill.net.json /usr/lib/mozilla/managed-storage/
 # Ouvrir la page des filtres de uBlock Origin pour les mettre à jour
@@ -41,6 +41,6 @@ firefox
 # Attendre que Firefox soit fermé avant de continuer
 wait $(pidof firefox)
 # Télécharger la liste des fichiers/répertoires à ne pas synchroniser avec rsync
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/rsync_ignorer
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/rsync_ignorer
 # Synchroniser le répertoire skel
 sudo rsync -avz --delete --exclude-from=rsync_ignorer "${HOME}/" /etc/skel
