@@ -19,7 +19,9 @@ sudo ln -s /usr/local/bin/Firefox/firefox-bin /usr/local/bin/firefox
 # Télécharger le fichier d’application
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/firefox.desktop
 # Installer le fichier d’application
-sudo cp firefox.desktop /usr/share/applications/ )
+sudo cp firefox.desktop /usr/share/applications/
+# Fermer le subshell
+)
 # Définir Firefox comme navigateur par défaut
 xdg-settings set default-web-browser firefox.desktop
 # Ouvrir Firefox sur la page de téléchargement de Grammalecte pour LibreOffice
