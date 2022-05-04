@@ -1,6 +1,6 @@
 # Installation des postes usagers
 1. Faire une installation minimale de Ubuntu 22.04 Desktop.
-2. Créer l’utilisateur « administrateur ».
+2. Créer l’utilisateur « *administrateur* ».
 3. Placer le script [installation_postes_cyber-base.sh](https://github.com/at2f/config/blob/main/cyber-base/Postes%20usagers/installation/installation_postes_cyber-base.sh), ainsi que le dossier `modules` l’accompagnant dans le répertoire personnel de *administrateur* : `/home/administrateur/`.
 4. Lancer le script dans un terminal avec la commande suivante : `bash ./installation_pc_cyber-base.sh`.
 
