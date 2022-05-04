@@ -5,7 +5,7 @@ sudo snap remove firefox
 # Se déplacer dans un dossier temporaire et ouvrir un subshell
 ( cd "$(mktemp -d)"
 # Télécharger la dernière version de Firefox
-wget -O firefox.tar.bz2 "htt# ps://download.mozilla.org/?product=firefox-latest&os=linux64&lang=fr"
+wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=fr"
 # Extraire l’archive
 tar -xjvf firefox.tar.bz2
 # Créer le répertoire de Firefox
