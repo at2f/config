@@ -29,4 +29,3 @@ cp -f maintenance_manuelle_hebdomadaire.sh ~/maintenance_manuelle_hebdomadaire.s
 chmod 755 ~/maintenance_manuelle_hebdomadaire.sh
 # Lancer le script
 ~/maintenance_manuelle_hebdomadaire.sh
-
