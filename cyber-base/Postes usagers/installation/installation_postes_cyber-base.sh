@@ -1,8 +1,5 @@
 #!/usr/bin/bash
 
-# Créer un répertoire temporaire et s’y déplacer
-cd $(mktemp -d)
-
 
 # Créer le mot de passe du partage SAMBA
 read -rp 'Entrer le mot de passe du partage SAMBA pour recevoir les scans : ' mdp_samba
@@ -29,7 +26,7 @@ wait $(pidof firefox)
 
 
 # Télécharger le script de maintenance hebdomadaire
-wget 
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/maintenance_manuelle_hebdomadaire.sh
 # Copier le script dans le répertoire utilisateur
 cp -f maintenance_manuelle_hebdomadaire.sh ~/maintenance_manuelle_hebdomadaire.sh
 # Rendre le script exécutable
