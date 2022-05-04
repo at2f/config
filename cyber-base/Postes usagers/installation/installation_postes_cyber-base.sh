@@ -5,15 +5,15 @@
 read -rp 'Entrer le mot de passe du partage SAMBA pour recevoir les scans : ' mdp_samba
 
 
-./modules/configurer_gestionnaire_de_paquets.sh
-./modules/configurer_explorateur_de_fichiers
-./modules/configurer_interface.sh
-./modules/configurer_securite_et_confidentialite.sh
-./modules/configurer_performances.sh
-./modules/configurer_teicee.sh
-./modules/configurer_firefox.sh
-./modules/configurer_scanner.sh
-./modules/configurer_session_usager.sh
+bash ./modules/configurer_gestionnaire_de_paquets.sh
+bash ./modules/configurer_explorateur_de_fichiers
+bash ./modules/configurer_interface.sh
+bash ./modules/configurer_securite_et_confidentialite.sh
+bash ./modules/configurer_performances.sh
+bash ./modules/configurer_teicee.sh
+bash ./modules/configurer_firefox.sh
+bash ./modules/configurer_scanner.sh
+bash ./modules/configurer_session_usager.sh
 
 
 # Configuration manuelle
