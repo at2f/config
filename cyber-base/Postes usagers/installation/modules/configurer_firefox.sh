@@ -17,7 +17,7 @@ sudo chown -R root:root /usr/local/bin/Firefox
 # Créer un lien symbolique pour pouvoir lancer Firefox depuis un Terminal
 sudo ln -s /usr/local/bin/Firefox/firefox-bin /usr/local/bin/firefox
 # Télécharger le fichier d’application
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/firefox/firefox.desktop
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/firefox.desktop
 # Installer le fichier d’application
 sudo cp firefox.desktop /usr/share/applications/ )
 # Définir Firefox comme navigateur par défaut
@@ -72,7 +72,7 @@ sed -i 's/browser.newtabpage.pinned//' "${fichier_preferences}"
 # Se déplacer dans un dossier temporaire et ouvrir un subshell
 ( cd "$(mktemp -d)"
 # Télécharger un modèle préconfiguré pour les paramètres d’entreprise
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/firefox/policies.json
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/policies.json
 # Créer le répertoire de destination
 sudo mkdir -p /etc/firefox/policies
 # Installer le fichier de configuration
@@ -80,7 +80,7 @@ sudo cp policies.json /etc/firefox/policies/
 # Créer le répertoire de configuration des addons Firefox (manifest de gestion de stockage)
 sudo mkdir -p /usr/lib/mozilla/managed-storage
 # Télécharger le fichiers de configuration de uBlock Origin
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/firefox/uBlock0%40raymondhill.net.json
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/firefox/uBlock0%40raymondhill.net.json
 # Installer le fichier de configuration de uBlock Origin
 sudo cp uBlock0@raymondhill.net.json /usr/lib/mozilla/managed-storage/
 # Fermer le subshell
