@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
 ## Configuration du partage Samba pour le répertoire de destination des scans ##
+# Créer le mot de passe du partage SAMBA
+read -rp 'Entrer le mot de passe du partage SAMBA pour recevoir les scans : ' mdp_samba
 # Installer SAMBA
 sudo apt install -y samba
 # Autoriser Samba dans le pare-feu
