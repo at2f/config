@@ -37,13 +37,13 @@ EOF
 ( cd "$(mktemp -d)"
 
 # Télécharger le script d’extinction des postes
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/eteindre.sh
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/eteindre.sh
 # Installer le script
 sudo cp -f eteindre.sh /usr/local/bin/
 # Rendre le script exécutable
 sudo chmod 755 /usr/local/bin/eteindre.sh
 # Télécharger le fond d’écran
-wget https://github.com/at2f/config/raw/main/cyber-base/fond_ecran_postes_usagers_cyber-base.png
+wget https://github.com/at2f/config/raw/main/cyber-base/Postes%20usagers/divers/fond_ecran_postes_usagers_cyber-base.png
 # Créer le répertoire des fonds d’écrans
 sudo mkdir -p /usr/share/backgrounds
 # Copier le fond d’écran dans /usr/share/backgrounds
