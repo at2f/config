@@ -8,7 +8,7 @@ echo 'Appliquation des corrections…'
 
 rm -rf ~/installation_postes_cyber-base.sh
 rm -rf ~/modules
-#sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
 
 ### AJOUTER LES CORRECTIONS AVANT CETTE LIGNE ###
 echo 'Corrections terminées.'
