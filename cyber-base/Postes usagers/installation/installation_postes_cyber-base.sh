@@ -2,14 +2,14 @@
 
 
 bash ./modules/configurer_gestionnaire_de_paquets.sh
+bash ./modules/configurer_session_usager.sh
 bash ./modules/configurer_explorateur_de_fichiers.sh
 bash ./modules/configurer_interface.sh
+bash ./modules/configurer_firefox.sh
+bash ./modules/configurer_scanner.sh
 bash ./modules/configurer_securite_et_confidentialite.sh
 bash ./modules/configurer_performances.sh
 bash ./modules/configurer_teicee.sh
-bash ./modules/configurer_firefox.sh
-bash ./modules/configurer_session_usager.sh
-bash ./modules/configurer_scanner.sh
 
 
 # Configuration manuelle
