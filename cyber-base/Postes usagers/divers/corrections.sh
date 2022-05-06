@@ -6,7 +6,7 @@
 echo 'Appliquation des corrections…'
 ### AJOUTER LES CORRECTIONS APRÈS CETTE LIGNE ###
 
-
+sudo apt purge -y wslu
 
 
 
