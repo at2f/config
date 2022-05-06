@@ -5,13 +5,14 @@ cd $(mktemp -d)
 
 # Appliquer les modifications présentes dans le script « corrections.sh »
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/corrections.sh
-chmod +x corrections.sh
-./corrections.sh
+bash ./corrections.sh
 
 # Synchroniser la liste des paquets
 sudo apt update
 # Télécharger et mettre à jour les paquets
 sudo apt upgrade -y
+# Installer les paquets de traduction manquants
+sudo apt install -y $(check-language-support)
 # Supprimer les paquets obsolètes
 sudo apt autoremove -y
 # Mettre à jour les snaps
