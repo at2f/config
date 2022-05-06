@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Installer le navigateur web en ligne de commande Lynx, nécessaire pour déconnecter les usagers à l’extinction du poste via le script « eteindre.sh »
+# Installer le navigateur web en ligne de commande Lynx, nécessaire pour déconnecter les usagers de Tic'nCube à l’extinction du poste
 sudo apt install -y lynx
 # Créer le script de déconnexion du compte Téïcée
 sudo tee /usr/local/sbin/deconnexion_ticncube.sh << EOF > /dev/null
