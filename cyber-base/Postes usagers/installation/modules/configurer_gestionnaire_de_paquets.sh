@@ -26,6 +26,10 @@ sudo apt install -y gimp
 sudo apt install -y imagemagick
 # Permettre à ImageMagick de convertir des images en PDF
 sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+# Installation de lynx et purge de wslu pour satisfaire la dépendance du paquet virtuel « www-browser »
+# et éviter le bug https://bugs.launchpad.net/ubuntu/+source/wslu/+bug/1971757
+sudo apt install -y lynx
+sudo apt purge -y wslu
 # Installer les paquets de traduction manquants
 sudo apt install -y $(check-language-support)
 # Supprimer quelques paquets inutiles pour les postes publics
