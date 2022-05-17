@@ -6,9 +6,6 @@
 echo 'Appliquation des corrections…'
 ### AJOUTER LES CORRECTIONS APRÈS CETTE LIGNE ###
 
-rm -rf ~/installation_postes_cyber-base.sh
-rm -rf ~/modules
-sudo apt-mark hold wslu
 
 
 ### AJOUTER LES CORRECTIONS AVANT CETTE LIGNE ###
