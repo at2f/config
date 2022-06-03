@@ -18,7 +18,7 @@ extinction_du_poste () {
     printf 'Fermez cette fenêtre pour annuler.'
     sleep 1
   done
-  shutdown now
+  systemctl poweroff
 }
 
 case "${aujourdhui}" in
