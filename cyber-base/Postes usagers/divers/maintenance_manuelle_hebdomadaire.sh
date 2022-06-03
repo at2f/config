@@ -41,7 +41,12 @@ notify-send --hint int:transient:1 'uBlock Origin' 'Vider le cache et mettre à 
 firefox
 # Attendre que Firefox soit fermé avant de continuer
 wait $(pidof firefox)
+
+# Attendre 30 secondes supplémentaires pour éviter que des fichiers en cours de suppression soient synchronisés
+sleep 30
 # Télécharger la liste des fichiers/répertoires à ne pas synchroniser avec rsync
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/rsync_ignorer
 # Synchroniser le répertoire skel
 sudo rsync -avz --delete --exclude-from=rsync_ignorer "${HOME}/" /etc/skel
+# Éteindre l’ordinateur
+systemctl poweroff
