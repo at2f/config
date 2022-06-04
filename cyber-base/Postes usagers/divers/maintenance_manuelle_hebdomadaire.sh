@@ -48,5 +48,3 @@ sleep 30
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/rsync_ignorer
 # Synchroniser le répertoire skel
 sudo rsync -avz --delete --exclude-from=rsync_ignorer "${HOME}/" /etc/skel
-# Éteindre l’ordinateur
-systemctl poweroff
