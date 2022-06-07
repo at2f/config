@@ -4,7 +4,7 @@
 sudo hostnamectl set-hostname ServeurImpression
 
 # Activer Cockpit
-sudo systemctl start --now cockpit
+sudo systemctl enable --now cockpit
 sudo firewall-cmd --permanent --zone=public --add-service=cockpit
 sudo firewall-cmd --reload
 
