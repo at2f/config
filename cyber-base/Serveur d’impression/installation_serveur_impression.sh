@@ -21,10 +21,10 @@ TYPE=Ethernet
 # Désactiver le DHCP et autoriser les IP statiques
 BOOTPROTO=none
 # IP statique et sous-réseau
-IPADDR=192.168.1.138
+IPADDR=10.11.111.10
 PREFIX=24
-GATEWAY=192.168.1.1
-DNS1=192.168.1.1
+GATEWAY=10.11.111.1
+DNS1=10.11.111.1
 DEFROUTE=yes
 IPV4_FAILURE_FATAL=no
 # Désactiver IPV6
