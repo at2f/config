@@ -27,7 +27,7 @@ bash ./installation_serveur_impression.sh )
 sudo systemctl restart cups
 ```
 
-# 4. Configuratino des imprimantes
+# 4. Configuration des imprimantes
 
 Lancer [le script de configuration des imprimantes](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh)
 
