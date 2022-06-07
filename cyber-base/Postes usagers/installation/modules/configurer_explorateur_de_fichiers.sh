@@ -12,9 +12,9 @@ mkdir -p ~/.local/share/nautilus/scripts/
 # Se déplacer dans un dossier temporaire et ouvrir un subshell
 ( cd "$(mktemp -d)"
 # Télécharger et installer les scripts
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Compresser%20et%20aplatir%20les%20PDFs%20s%C3%A9lectionn%C3%A9s
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Rassembler%20les%20images%20s%C3%A9lectionn%C3%A9es%20dans%20un%20PDF
-wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Rogner%20les%20contours%20des%20images%20s%C3%A9lectionn%C3%A9es
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Compresser%20et%20aplatir%20les%20PDFs
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Rassembler%20les%20fichiers%20dans%20un%20PDF
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Postes%20usagers/divers/scripts_nautilus/Rogner%20les%20contours%20des%20images
 cp 'Compresser et aplatir les PDFs sélectionnés' ~/.local/share/nautilus/scripts/
 cp 'Rassembler les images sélectionnées dans un PDF' ~/.local/share/nautilus/scripts/
 cp 'Rogner les contours des images sélectionnées' ~/.local/share/nautilus/scripts/
