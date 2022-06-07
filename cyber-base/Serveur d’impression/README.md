@@ -23,7 +23,16 @@ bash ./installation_serveur_impression.sh )
 
 #### 2. Relancer le servic CUPS :
 
-```
+```bash
 sudo systemctl restart cups
 ```
 
+# 4. Configuratino des imprimantes
+
+Lancer [le script de configuration des imprimantes](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh)
+
+```bash
+( cd $(mktemp -d)
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh
+bash ./installation_imprimantes.sh) )
+```
