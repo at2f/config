@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Changer le nom d’hôte
+sudo systemctl set-hostname ServeurImpression
+
 # Activer Cockpit
 sudo systemctl start --now cockpit
 sudo firewall-cmd --permanent --zone=public --add-service=cockpit
