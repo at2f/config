@@ -12,7 +12,7 @@ sudo firewall-cmd --permanent --add-service=ipp
 sudo firewall-cmd --reload
 
 # Assigner une IP fixe
-cat << EOF > /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo tee /etc/sysconfig/network-scripts/ifcfg-eth0 << EOF > /dev/null
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
