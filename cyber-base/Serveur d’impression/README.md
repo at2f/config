@@ -36,3 +36,7 @@ Lancer [le script de configuration des imprimantes](https://github.com/at2f/conf
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh
 bash ./installation_imprimantes.sh) )
 ```
+
+# 5. Accéder au serveur d’impression via Cockpit
+
+http://10.11.111.10:631
