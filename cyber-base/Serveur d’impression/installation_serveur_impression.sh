@@ -36,4 +36,4 @@ ONBOOT=yes
 EOF
 
 # Activer les mises à jour automatiques
-sudo sed -i 's/*upgrade_type*/upgrade_type = default/' /etc/dnf/automatic.conf
+sudo sed -i 's/upgrade_type.*/upgrade_type = default/' /etc/dnf/automatic.conf
