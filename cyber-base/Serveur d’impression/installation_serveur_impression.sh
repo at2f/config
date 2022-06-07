@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Changer le nom d’hôte
-sudo systemctl set-hostname ServeurImpression
+sudo hostemctl set-hostname ServeurImpression
 
 # Activer Cockpit
 sudo systemctl start --now cockpit
