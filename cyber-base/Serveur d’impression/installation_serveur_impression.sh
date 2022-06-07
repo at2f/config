@@ -15,12 +15,24 @@ sudo firewall-cmd --permanent --add-service=ipp
 sudo firewall-cmd --reload
 
 # Assigner une IP fixe
-sudo tee /etc/sysconfig/network-scripts/ifcfg-eth0 << EOF > /dev/null
-DEVICE=eth0
+sudo tee /etc/sysconfig/network-scripts/ifcfg-eno1 << EOF > /dev/null
+# Type d’interface
+TYPE=Ethernet
+# Désactiver le DHCP et autoriser les IP statiques
 BOOTPROTO=none
-ONBOOT=yes
+# IP statique et sous-réseau
+IPADDR=192.168.1.138
 PREFIX=24
-IPADDR=192.168.1.230
+GATEWAY=192.168.1.1
+DNS1=192.168.1.1
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+# Désactiver IPV6
+IPV6INIT=no
+# Matériel
+DEVICE=eno1
+# Configurer au démarrage
+ONBOOT=yes
 EOF
 
 # Activer les mises à jour automatiques
