@@ -27,7 +27,7 @@ TYPE=Ethernet
 # Désactiver le DHCP et autoriser les IP statiques
 BOOTPROTO=none
 # IP statique et sous-réseau
-IPADDR=10.11.111.10
+IPADDR=10.11.111.11
 PREFIX=24
 GATEWAY=10.11.111.1
 DNS1=10.11.111.1
