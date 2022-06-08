@@ -19,7 +19,7 @@ bash ./installation_serveur_impression.sh )
 #### 1. Modifier quelques paramètres dans `/etc/cups/cupsd.conf` :
 (avec `sudo nano /etc/cups/cupsd.conf`)
 - Remplacer `Listen localhost:631` par `Listen 631`
-- Rajouter deux lignes `Allow 192.168.1.0/24` et `Allow 10.11.111.0/24` après `Order allow,deny` dans les catégories suivantes : `<Location />`, `<Location /admin>`, et `<Location /admin/conf>`.
+- Rajouter `Allow @LOCAL` après `Order allow,deny` dans les catégories `<Location />` & `<Location /admin>`.
 
 #### 2. Relancer le servic CUPS :
 
