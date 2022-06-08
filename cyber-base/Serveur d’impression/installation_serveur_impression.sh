@@ -5,7 +5,7 @@ sudo hostnamectl set-hostname ServeurImpression
 
 # Activer Cockpit
 sudo systemctl enable --now cockpit
-sudo firewall-cmd --permanent --zone=public --add-service=cockpit
+sudo firewall-cmd --permanent --add-service=cockpit # --zone=public
 sudo systemctl reload firewalld
 
 # Installer CUPS
@@ -14,11 +14,17 @@ sudo systemctl enable --now cups
 sudo firewall-cmd --permanent --add-service=ipp
 sudo firewall-cmd --reload
 
-# Installer SAMBA
-sudo dnf install -y samba
-sudo systemctl enable --now smb nmb
-sudo firewall-cmd --permanent --add-service=samba
+# Partager les imprimantes avec Avahi
+sudo systemctl enable --now avahi-daemon
+#sudo firewall-cmd --permanent --add-port=5353/udp
+sudo firewall-cmd --permanent --add-service=mdns
 sudo systemctl reload firewalld
+
+# Installer SAMBA
+#sudo dnf install -y samba
+#sudo systemctl enable --now smb nmb
+#sudo firewall-cmd --permanent --add-service=samba
+#sudo systemctl reload firewalld
 
 # Assigner une IP fixe
 sudo tee /etc/sysconfig/network-scripts/ifcfg-eno1 << EOF > /dev/null
