@@ -14,8 +14,10 @@ description_de_l_imprimante="Imprimante_pour_mdp"
 emplacement_de_l_imprimante="Cyber-Base"
 fichier_ppd="KMbeuC360iux.ppd"
 uri_imprimante="socket://10.11.111.50"
-mot_de_passe_imprimante_couleur="1953"
-mot_de_passe_imprimante_nb="1392"
+
+# Demander les mots de passe de l'imprimante
+read -rp 'Mot de passe noir & blanc de l’imprimante ? ' mot_de_passe_imprimante_nb
+read -rp 'Mot de passe couleur de l’imprimante ? ' mot_de_passe_imprimante_couleur
 
 ## Lister les options disponibles avec la commande ci-dessous ##
 # lpoptions -p $nom_de_l_imprimante -l
