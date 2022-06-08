@@ -19,6 +19,7 @@ wget -O "${nom_pilote}.tar.gz" "${url_telechargement}"
 tar -xf "${nom_pilote}".tar.gz
 # Copier le fichier ppd dans le répertoire de configuration de CUPS
 sudo cp "./${nom_pilote}/KMbeuC360iux.ppd" /usr/share/cups/model/
+sudo chmod 644 /usr/share/cups/model/KMbeuC360iux.ppd
 # Copier les filtres dans le répertoire des filtres de CUPS
 sudo cp "./${nom_pilote}/KMbeuEmpPS.pl" /usr/lib/cups/filter/
 sudo cp "./${nom_pilote}/KMbeuEnc.pm" /usr/lib/cups/filter/ )
