@@ -46,7 +46,7 @@ sudo reboot
 # 6. Accéder au serveur d’impression
 
 Interface CUPS :
-http://10.11.111.10:631
+https://10.11.111.10:631
 
 Cockpit :
-http://10.11.111.10:9090
+https://10.11.111.10:9090
