@@ -20,12 +20,6 @@ sudo systemctl enable --now avahi-daemon
 sudo firewall-cmd --permanent --add-service=mdns
 sudo systemctl reload firewalld
 
-# Installer SAMBA
-#sudo dnf install -y samba
-#sudo systemctl enable --now smb nmb
-#sudo firewall-cmd --permanent --add-service=samba
-#sudo systemctl reload firewalld
-
 # Assigner une IP fixe
 sudo tee /etc/sysconfig/network-scripts/ifcfg-eno1 << EOF > /dev/null
 # Type d’interface
