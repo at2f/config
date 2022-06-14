@@ -16,7 +16,6 @@ sudo firewall-cmd --reload
 
 # Partager les imprimantes avec Avahi
 sudo systemctl enable --now avahi-daemon
-#sudo firewall-cmd --permanent --add-port=5353/udp
 sudo firewall-cmd --permanent --add-service=mdns
 sudo systemctl reload firewalld
 
