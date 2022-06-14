@@ -4,6 +4,8 @@
 ## INSTALLATION DU PILOTE DE L’IMPRIMANTE ##
 ############################################
 
+# Installation de Perl, nécessaire sous CentOS
+sudo dnf install -y perl
 # Nom du pilote, sans « .tar.gz »
 nom_pilote='KMbeuUXv1_24_multi_language'
 url_telechargement='https://dl.konicaminolta.eu/fr?tx_kmanacondaimport_downloadproxy[fileId]=79da0f659ac2191cf88560aee21df50d&tx_kmanacondaimport_downloadproxy[documentId]=128230&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=FR&type=1558521685'
@@ -144,10 +146,10 @@ image_quality_setting='Document-Photo' # Options possibles : Document-Photo Docu
 mot_de_passe_imprimante="Custom.${mot_de_passe_imprimante_couleur}" # Options possibles : None Custom.$mot_de_passe_imprimante_couleur Custom.$mot_de_passe_imprimante_nb
 creer_imprimante
 
-### LIVRET A5 COULEUR ###
+### LIVRET A4 COULEUR ###
 ## Options de l’imprimante ##
-nom_de_l_imprimante='5_Livret_A5_Couleur' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='5 Livret A5 Couleur'
+nom_de_l_imprimante='5_Livret_A4_Couleur' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
+description_de_l_imprimante='5 Livret A4 Couleur'
 # General
 format_papier='A4'
 # Finishing Options
@@ -155,52 +157,18 @@ type_d_impression='1Sided' # 1Sided = recto | 2Sided = recto/verso
 combinaison='Booklet' # Options possibles : None Booklet
 pliage='Stitch' # Options possibles : None Stitch HalfFold TriFold
 # Quality
-selectionner_couleur='Grayscale' # Options possibles : Auto Color Grayscale
-image_quality_setting='Document' # Options possibles : Document-Photo Document Photo CAD
+selectionner_couleur='Color' # Options possibles : Auto Color Grayscale
+image_quality_setting='Document-Photo' # Options possibles : Document-Photo Document Photo CAD
 # Account Track
 mot_de_passe_imprimante="Custom.${mot_de_passe_imprimante_couleur}" # Options possibles : None Custom.$mot_de_passe_imprimante_couleur Custom.$mot_de_passe_imprimante_nb
 creer_imprimante
 
 ### LIVRET A5 NOIR & BLANC ###
 ## Options de l’imprimante ##
-nom_de_l_imprimante='6_Livret_A5_Noir' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='6 Livret A5 Noir'
+nom_de_l_imprimante='6_Livret_A4_Noir' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
+description_de_l_imprimante='6 Livret A4 Noir'
 # General
 format_papier='A4'
-# Finishing Options
-type_d_impression='1Sided' # 1Sided = recto | 2Sided = recto/verso
-combinaison='Booklet' # Options possibles : None Booklet
-pliage='Stitch' # Options possibles : None Stitch HalfFold TriFold
-# Quality
-selectionner_couleur='Grayscale' # Options possibles : Auto Color Grayscale
-image_quality_setting='Document' # Options possibles : Document-Photo Document Photo CAD
-# Account Track
-mot_de_passe_imprimante="Custom.${mot_de_passe_imprimante_nb}" # Options possibles : None Custom.$mot_de_passe_imprimante_couleur Custom.$mot_de_passe_imprimante_nb
-creer_imprimante
-
-### LIVRET A4 COULEUR ###
-## Options de l’imprimante ##
-nom_de_l_imprimante='7_Livret_A4_Couleur' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='7 Livret A4 Couleur'
-# General
-format_papier='A3'
-# Finishing Options
-type_d_impression='1Sided' # 1Sided = recto | 2Sided = recto/verso
-combinaison='Booklet' # Options possibles : None Booklet
-pliage='Stitch' # Options possibles : None Stitch HalfFold TriFold
-# Quality
-selectionner_couleur='Grayscale' # Options possibles : Auto Color Grayscale
-image_quality_setting='Document' # Options possibles : Document-Photo Document Photo CAD
-# Account Track
-mot_de_passe_imprimante="Custom.${mot_de_passe_imprimante_couleur}" # Options possibles : None Custom.$mot_de_passe_imprimante_couleur Custom.$mot_de_passe_imprimante_nb
-creer_imprimante
-
-### LIVRET A4 NOIR & BLANC ###
-## Options de l’imprimante ##
-nom_de_l_imprimante='8_Livret_A4_Noir' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='8 Livret A4 Noir'
-# General
-format_papier='A3'
 # Finishing Options
 type_d_impression='1Sided' # 1Sided = recto | 2Sided = recto/verso
 combinaison='Booklet' # Options possibles : None Booklet
