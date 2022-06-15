@@ -148,8 +148,8 @@ creer_imprimante
 
 ### LIVRET A4 COULEUR ###
 ## Options de l’imprimante ##
-nom_de_l_imprimante='5_Livret_A4_Couleur' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='5 Livret A4 Couleur'
+nom_de_l_imprimante='5_Livret_Couleur' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
+description_de_l_imprimante='5 Livret Couleur'
 # General
 format_papier='A4'
 # Finishing Options
@@ -165,8 +165,8 @@ creer_imprimante
 
 ### LIVRET A5 NOIR & BLANC ###
 ## Options de l’imprimante ##
-nom_de_l_imprimante='6_Livret_A4_Noir' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
-description_de_l_imprimante='6 Livret A4 Noir'
+nom_de_l_imprimante='6_Livret_Noir' # Max 127 caractères, pas de caractères spéciaux ni d’espaces
+description_de_l_imprimante='6 Livret Noir'
 # General
 format_papier='A4'
 # Finishing Options
