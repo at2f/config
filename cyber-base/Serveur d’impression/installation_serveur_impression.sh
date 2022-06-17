@@ -42,3 +42,19 @@ EOF
 
 # Activer les mises à jour automatiques
 sudo sed -i 's/upgrade_type.*/upgrade_type = default/' /etc/dnf/automatic.conf
+
+# Éteindre automatiquement le serveur d’impression
+sudo tee -a /etc/systemd/system/systemd-poweroff.timer << EOF > /dev/null
+[Unit]
+Description=Extinction automatique du serveur d’impression
+
+[Timer]
+OnCalendar=Mon,Wed,Thu,Fri,Sat *-*-* 19:00:00
+OnCalendar=Tue *-*-* 21:00:00
+OnCalendar=Sun *-*-* 08:30:00
+
+[Install]
+WantedBy=timers.target
+EOF
+
+sudo systemctl enable --now /etc/systemd/system/systemd-poweroff.timer
