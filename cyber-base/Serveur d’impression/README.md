@@ -43,7 +43,7 @@ bash ./installation_imprimantes.sh )
 sudo reboot
 ```
 
-# 6. Configurer l’allumage/extinction automatique du serveur
+# 6. Configurer l’extinction/allumage automatique du serveur
 
 ## Extinction automatique
 
