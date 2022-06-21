@@ -45,7 +45,7 @@ sudo reboot
 
 # 6. Configurer l’allumage/extinction automatique du serveur
 
-
+## Extinction automatique
 
 Lancer [le script de configuration de l’extinction automatique du serveur](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh).
 
@@ -54,6 +54,17 @@ Lancer [le script de configuration de l’extinction automatique du serveur](htt
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh
 bash ./activation_extinction_automatique.sh
 ```
+
+## Allumage automatique
+
+Régler les paramètres suivants dans le BIOS (Advanced -> Power) :
+
+Wake System from S5
+
+Recurrence = Daily
+
+Puis choisir l’heure de démarrage (Wakeup Hour, Wakeup Minute, Wakeup Second).
+
 
 # 7. Accéder au serveur d’impression
 
