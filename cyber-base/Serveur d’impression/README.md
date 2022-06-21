@@ -37,13 +37,7 @@ wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E
 bash ./installation_imprimantes.sh )
 ```
 
-# 5. Redémarrer le serveur d’impression
-
-```bash
-sudo reboot
-```
-
-# 6. Configurer l’extinction/allumage automatique du serveur
+# 5. Configurer l’extinction/allumage automatique du serveur
 
 ## Extinction automatique
 
@@ -63,6 +57,11 @@ Régler les paramètres suivants dans le BIOS (Advanced -> Power) :
 - Recurrence = Daily
 - Puis choisir l’heure de démarrage (Wakeup Hour, Wakeup Minute, Wakeup Second).
 
+# 6. Redémarrer le serveur d’impression
+
+```bash
+sudo reboot
+```
 
 # 7. Accéder au serveur d’impression
 
