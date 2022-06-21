@@ -47,6 +47,14 @@ sudo reboot
 
 
 
+Lancer [le script de configuration de l’extinction automatique du serveur](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh).
+
+```bash
+( cd $(mktemp -d)
+wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh
+bash ./activation_extinction_automatique.sh
+```
+
 # 7. Accéder au serveur d’impression
 
 Interface CUPS :
