@@ -1,5 +1,5 @@
 # 1. Installation du système d’exploitation
-Installer [Centos Stream](https://www.centos.org/), avec les réglages suivants :
+Installer [CentOS Stream](https://www.centos.org/), avec les réglages suivants :
 - Source d’installation : Sur le réseau -> Miroir le plus proche
 - Sélection logiciel : Server
 - Security Profile : ANSII-BP-028 (minimal)
