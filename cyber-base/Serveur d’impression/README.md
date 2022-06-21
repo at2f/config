@@ -7,7 +7,7 @@ Installer [CentOS Stream](https://www.centos.org/), avec les réglages suivants�
 - Ne **pas** créer de mot de passe administrateur
 
 # 2. Lancement du script de post-installation
-Lancer [le script de configuration du serveur d’impression](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_serveur_impression.sh)
+Lancer [le script de configuration du serveur d’impression](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_serveur_impression.sh) :
 ```bash
 ( cd $(mktemp -d)
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/installation_serveur_impression.sh
@@ -29,7 +29,7 @@ sudo systemctl restart cups
 
 # 4. Configuration des imprimantes
 
-Lancer [le script de configuration des imprimantes](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh)
+Lancer [le script de configuration des imprimantes](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/installation_imprimantes.sh) :
 
 ```bash
 ( cd $(mktemp -d)
@@ -47,7 +47,7 @@ sudo reboot
 
 ## Extinction automatique
 
-Lancer [le script de configuration de l’extinction automatique du serveur](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh).
+Lancer [le script de configuration de l’extinction automatique du serveur](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh) :
 
 ```bash
 ( cd $(mktemp -d)
