@@ -5,7 +5,7 @@ sudo hostnamectl set-hostname ServeurImpression
 
 # Activer Cockpit
 sudo systemctl enable --now cockpit.socket
-sudo firewall-cmd --permanent --add-service=cockpit # --zone=public
+sudo firewall-cmd --permanent --add-service=cockpit
 sudo systemctl reload firewalld
 
 # Installer CUPS
