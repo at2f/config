@@ -52,7 +52,7 @@ Lancer [le script de configuration de l’extinction automatique du serveur](htt
 ```bash
 ( cd $(mktemp -d)
 wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh
-bash ./activation_extinction_automatique.sh
+bash ./activation_extinction_automatique.sh )
 ```
 
 ## Allumage automatique
