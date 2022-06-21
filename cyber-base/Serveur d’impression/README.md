@@ -59,11 +59,9 @@ bash ./activation_extinction_automatique.sh )
 
 Régler les paramètres suivants dans le BIOS (Advanced -> Power) :
 
-Wake System from S5
-
-Recurrence = Daily
-
-Puis choisir l’heure de démarrage (Wakeup Hour, Wakeup Minute, Wakeup Second).
+- Wake System from S5
+- Recurrence = Daily
+- Puis choisir l’heure de démarrage (Wakeup Hour, Wakeup Minute, Wakeup Second).
 
 
 # 7. Accéder au serveur d’impression
