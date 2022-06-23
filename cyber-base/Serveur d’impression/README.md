@@ -49,9 +49,10 @@ wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E
 bash ./activation_extinction_automatique.sh )
 ```
 
-### Modifier les paramètres d’extinction automatique
+### Modifier les jours/heures d’extinction automatique
 
-Éditer le fichier `/etc/systemd/system/systemctl_poweroff.timer`.
+- Modifier [le script de configuration de l’extinction automatique du serveur](https://github.com/at2f/config/blob/main/cyber-base/Serveur%20d%E2%80%99impression/activation_extinction_automatique.sh) avant de le lancer, *ou*
+- Éditer le fichier minuteur du service : `sudo nano /etc/systemd/system/systemctl_poweroff.timer`.
 
 ## Allumage automatique
 
