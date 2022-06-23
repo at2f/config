@@ -49,6 +49,10 @@ wget https://raw.githubusercontent.com/at2f/config/main/cyber-base/Serveur%20d%E
 bash ./activation_extinction_automatique.sh )
 ```
 
+### Modifier les paramètres d’extinction automatique
+
+Éditer le fichier `/etc/systemd/system/systemctl_poweroff.timer`.
+
 ## Allumage automatique
 
 Régler les paramètres suivants dans le BIOS (Advanced -> Power) :
