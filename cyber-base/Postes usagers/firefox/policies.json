@@ -128,7 +128,7 @@
     "OverridePostUpdatePage": "",
     "PasswordManagerEnabled": false,
     "PrimaryPassword": false,
-    "PSFjs": {
+    "PDFjs": {
       "Enabled": false,
       "EnablePermissions": false
     },
