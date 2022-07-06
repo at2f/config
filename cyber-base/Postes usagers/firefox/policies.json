@@ -159,6 +159,6 @@
       "SkipOnboarding": true,
       "MoreFromMozilla": false
     },
-    "UseSystemPrintDialog": true
+    "UseSystemPrintDialog": false
   }
 }
