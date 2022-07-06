@@ -158,6 +158,7 @@
       "UrlbarInterventions": false,
       "SkipOnboarding": true,
       "MoreFromMozilla": false
-    }
+    },
+    "UseSystemPrintDialog": true
   }
 }
