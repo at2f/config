@@ -129,7 +129,8 @@
     "PasswordManagerEnabled": false,
     "PrimaryPassword": false,
     "PSFjs": {
-      "Enabled": false
+      "Enabled": false,
+      "EnablePermissions": false
     },
     "PopupBlocking": {
       "Allow": ["https://mail.google.com",
