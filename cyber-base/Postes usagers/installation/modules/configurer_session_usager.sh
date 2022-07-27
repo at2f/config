@@ -6,7 +6,7 @@ sudo useradd usager -m -d /dev/shm/usager -c Usager -s /bin/bash
 # Générer un mot de passe aléatoire
 mdp_usager=$(printf "$(date)${RANDOM}" | md5sum | cut -d' ' -f1)
 # Assigner ce mot de passe
-echo "$usager:${mdp_usager}" | chpasswd
+echo "usager:${mdp_usager}" | chpasswd
 # Activer la connexion automatique
 sudo sed -i 's/.*AutomaticLoginEnable =.*/AutomaticLoginEnable = true/' /etc/gdm3/custom.conf
 sudo sed -i 's/.*AutomaticLogin =.*/AutomaticLogin = usager/' /etc/gdm3/custom.conf
