@@ -13,6 +13,7 @@ bash ./modules/configurer_teicee.sh
 
 
 # Configuration manuelle
+echo 'Firefox : Ajouter le bouton de capture d’écran à la barre d’outils & vérifier le moteur de recherche.'
 notify-send --hint int:transient:1 'Firefox' 'Ajouter le bouton de capture d’écran à la barre d’outils & vérifier le moteur de recherche.'
 firefox about:preferences#search
 wait $(pidof firefox)
