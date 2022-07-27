@@ -27,7 +27,6 @@ Vérifier régulièrement si une nouvelle version de [Grammalecte pour LibreOffi
 - Coller le contenu à la suite de `"adminSettings":` dans [uBlock0@raymondhill.net.json](https://github.com/at2f/config/blob/main/cyber-base/Postes%20usagers/firefox/uBlock0%40raymondhill.net.json). (⚠ Attention aux guillemets !)
 - Le script de maintenance hebdomadaire téléchargera et installera la nouvelle version.
 
-bash ./installation_pc_cyber-base.sh
 ## Documentation
 - Paramètres d’entreprises de Firefox en français (très succint) : `about:policies#documentation`
 - [Bloquer les comportements gênants de certains site](https://www.reddit.com/r/uBlockOrigin/wiki/solutions) (par ex : acceptation des cookies systématique sur Google) avec uBlock Origin.
