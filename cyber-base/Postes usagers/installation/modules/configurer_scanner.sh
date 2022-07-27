@@ -9,7 +9,7 @@ sudo apt install -y samba
 sudo ufw allow samba
 # Ajouter l’utilisateur usager au groupe sambashare
 sudo usermod -aG sambashare usager
-# Assigner le mot de passe « choson » au compte SAMBA « usager »
+# Assigner le mot de passe du compte SAMBA « usager »
 echo -ne "${mdp_samba}\n${mdp_samba}\n" | sudo smbpasswd -as usager
 # Créer le répertoire « Scans »
 mkdir -p ~/Scans
