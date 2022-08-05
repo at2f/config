@@ -3,6 +3,7 @@
     "BlockAboutAddons": true,
     "BlockAboutConfig": true,
     "BlockAboutProfiles": true,
+    "CaptivePortal": true,
     "Cookies": {
       "Behavior": "limit-foreign",
       "ExpireAtSessionEnd": true,
@@ -121,7 +122,6 @@
         "name": "ANTS"
       }
     ],
-    "NetworkPrediction": false,
     "NewTabPage": true,
     "NoDefaultBookmarks": true,
     "OfferToSaveLogins": false,
