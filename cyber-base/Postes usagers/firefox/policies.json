@@ -16,8 +16,8 @@
     "DisablePrivateBrowsing": true,
     "DisableSafeMode": true,
     "DisableSecurityBypass": {
-      "InvalidCertificate": true | false,
-      "SafeBrowsing": true | false
+      "InvalidCertificate": true,
+      "SafeBrowsing": true
     },
     "DisableSetDesktopBackground": true,
     "DNSOverHTTPS": {
