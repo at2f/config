@@ -20,6 +20,7 @@
       "SafeBrowsing": true
     },
     "DisableSetDesktopBackground": true,
+    "DisableSystemAddonUpdate": true,
     "DNSOverHTTPS": {
       "Enabled": false,
       "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
