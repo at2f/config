@@ -9,13 +9,17 @@
       "ExpireAtSessionEnd": true,
       "Locked": true
     },
-    "DisableSetDesktopBackground": true,
-    "DisableMasterPasswordCreation": true,
     "DisableDeveloperTools": true,
     "DisableFirefoxAccounts": true,
+    "DisableMasterPasswordCreation": true,
     "DisablePocket": true,
     "DisablePrivateBrowsing": true,
     "DisableSafeMode": true,
+    "DisableSecurityBypass": {
+      "InvalidCertificate": true | false,
+      "SafeBrowsing": true | false
+    },
+    "DisableSetDesktopBackground": true,
     "DNSOverHTTPS": {
       "Enabled": false,
       "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
