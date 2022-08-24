@@ -31,6 +31,12 @@ sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PD
 sudo apt install -y lynx
 sudo apt purge -y wslu
 sudo apt-mark hold wslu
+# Installer le support des systèmes de fichier iOS
+sudo apt install -y ifuse
+# Installer le support des images HEIF
+sudo apt install -y heif-gdk-pixbuf heif-thumbnailer
+# Définir la visionneuse d’images (Eye Of GNOME) comme logiciel par défaut pour ouvrir les images HEIF
+xdg-mime default org.gnome.eog.desktop image/heic
 # Installer les paquets de traduction manquants
 sudo apt install -y $(check-language-support)
 # Supprimer quelques paquets inutiles pour les postes publics
