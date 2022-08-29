@@ -33,4 +33,4 @@ Vérifier régulièrement si une nouvelle version de [Grammalecte pour LibreOffi
 - [Paramètres d’entreprise de uBlock Origin](https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin).
 - [Paramètres des manifests de gestion de stockage de Firefox](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Native_manifests#manifest_de_gestion_de_stockage).
 - [Emplacement des manifests de gestion de stockage de Firefox](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Native_manifests#linux).
-- [Installer Firefox manuellement](https://ftp.mozilla.org/pub/firefox/releases/latest/README.txt).
+- Installer Firefox manuellement [en version classique](https://ftp.mozilla.org/pub/firefox/releases/latest/README.txt) ou [en version entreprise ESR](https://ftp.mozilla.org/pub/firefox/releases/latest-esr/README.txt).
