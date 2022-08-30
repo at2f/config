@@ -20,7 +20,7 @@ sudo snap refresh
 
 ## Mettre à jour Firefox
 # Télécharger la dernière version de Firefox
-wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=fr"
+wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest&os=linux64&lang=fr"
 # Extraire l’archive
 tar -xjvf firefox.tar.bz2
 # Mettre à jour Firefox
