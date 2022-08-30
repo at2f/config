@@ -154,6 +154,16 @@
     "RequestedLocales": "fr-FR,fr,en-US,en",
     "SanitizeOnShutdown": true,
     "SearchBar": "unified",
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "Startpage",
+          "URLTemplate": "https://www.startpage.com/sp/search?query={searchTerms}&prfe=8d48ca6adae01eb75c25333c67841ceb81a522c0de4ff281a3d9405ccea07ab8d449902ec838dee3a9976bb0c676736d7ea3f0dc440f9f160da1d13091f58946f2565b014a377f9e300c62677d68&language=francais&t=device&lui=francais&cat=web&sc=4f9emuRQYhFa20&abp=-1",
+          "IconURL": "https://www.startpage.com/sp/cdn/favicons/favicon--default.ico"
+        }
+      ],
+      "Default": "Startpage"
+    },
     "SearchSuggestEnabled": true,
     "ShowHomeButton": true,
     "UserMessaging": {
