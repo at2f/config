@@ -24,6 +24,7 @@ if ((Test-Admin) -eq $false)  {
 winget install Microsoft.WindowsTerminal
 winget install Microsoft.PowerShell
 winget install Mozilla.Firefox.ESR
+winget install Google.Chrome
 winget install TheDocumentFoundation.LibreOffice
 winget install VideoLAN.VLC
 winget install 7zip.7zip
