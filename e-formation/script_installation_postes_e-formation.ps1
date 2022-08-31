@@ -52,7 +52,6 @@ winget uninstall Microsoft.OneDrive
 winget uninstall SpotifyAB.SpotifyMusic_zpdnekdrzrea0
 
 # Afficher les extensions de fichiers
-function ShowFileExtensions() 
 # http://superuser.com/questions/666891/script-to-set-hide-file-extensions
 Push-Location
 Set-Location HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
