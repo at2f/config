@@ -52,7 +52,13 @@ winget uninstall Microsoft.OneDrive
 winget uninstall SpotifyAB.SpotifyMusic_zpdnekdrzrea0
 
 # Afficher les extensions de fichiers
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v HideFilesExt /t REG_DWORD /d 0 /f
+function ShowFileExtensions() 
+# http://superuser.com/questions/666891/script-to-set-hide-file-extensions
+Push-Location
+Set-Location HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+Set-ItemProperty . HideFileExt "0"
+Pop-Location
+Stop-Process -processName: Explorer -force # This will restart the Explorer service to make this work.
 
 # Créer le dossier de configuration des paramètres d’entreprise de Firefox
 mkdir 'C:\Program Files\Mozilla Firefox\distribution'
