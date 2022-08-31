@@ -1,6 +1,6 @@
 # Installation des postes
 
-1. Installer Windows 11 Pro [en créant une session administrateur local](https://github.com/at2f/regler_problemes#installer-windows-sans-compte-microsoft). Les stagiaires auront chacun une session locale sans droits d’administration.
+1. Installer Windows 11 Pro [en créant un compte administrateur local](https://github.com/at2f/regler_problemes#installer-windows-sans-compte-microsoft). Les stagiaires auront chacun une session locale sans droits d’administration.
 2. Installer le pilote de la carte graphique [AMD Software Adrenalin Edition](https://www.amd.com/fr/support) pour les postes de travail (sans cela un seul écran sera fonctionnel).
 3. Faire les mises à jour de Windows.
 4. Mettre à jour les logiciels du Microsoft Store (cela installera `winget` qui est nécessaire par la suite).
