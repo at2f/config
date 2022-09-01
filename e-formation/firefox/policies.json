@@ -7,12 +7,10 @@
     "BlockAboutProfiles": true,
     "CaptivePortal": true,
     "DisablePocket": true,
-    "DisableSafeMode": true,
     "DisableSecurityBypass": {
       "InvalidCertificate": true,
       "SafeBrowsing": true
     },
-    "DisableSystemAddonUpdate": true,
     "DNSOverHTTPS": {
       "Enabled": false,
       "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
@@ -25,10 +23,6 @@
       "Fingerprinting": true
     },
     "ExtensionSettings": {
-      "*": {
-        "blocked_install_message": "L'installation d'extensions n'est pas autorisée.",
-        "installation_mode": "blocked"
-      },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
@@ -75,7 +69,6 @@
         "name": "Occitanie e-formation"
       }
     ],
-    "NetworkPrediction": false,
     "NewTabPage": true,
     "NoDefaultBookmarks": true,
     "OverridePostUpdatePage": "",
