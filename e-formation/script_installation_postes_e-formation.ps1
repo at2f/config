@@ -61,3 +61,6 @@ Stop-Process -processName: Explorer -force # This will restart the Explorer serv
 
 # Créer le dossier de configuration des paramètres d’entreprise de Firefox
 mkdir 'C:\Program Files\Mozilla Firefox\distribution'
+
+# Chiffre le disque C: avec BitLocker (se lancera au redémarrage)
+manage-bde -on C:
