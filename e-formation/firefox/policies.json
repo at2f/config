@@ -2,19 +2,11 @@
   "policies": {
     "AppAutoUpdate": true,
     "BackgroundAppUpdate": true,
-    "BlockAboutAddons": true,
-    "BlockAboutConfig": true,
-    "BlockAboutProfiles": true,
     "CaptivePortal": true,
     "DisablePocket": true,
     "DisableSecurityBypass": {
       "InvalidCertificate": true,
       "SafeBrowsing": true
-    },
-    "DNSOverHTTPS": {
-      "Enabled": false,
-      "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
-      "Locked": true
     },
     "EnableTrackingProtection": {
       "Value": false,
@@ -67,6 +59,10 @@
       {
         "url": "https://www.formation-occ.com",
         "name": "Occitanie e-formation"
+      },
+      {
+        "url": "https://at2f.ticncube.com",
+        "name": "Page de connexion Tic'nCube"
       }
     ],
     "NewTabPage": true,
