@@ -9,7 +9,19 @@
 7. Configurer les stratégies de groupe dans « Modifier la stratégie de groupe » (`gpedit.msc`) avec [les paramètres suivants](https://github.com/at2f/config/blob/main/e-formation/Param%C3%A8tres%20de%20strat%C3%A9gie%20de%20groupe.md).
 
 # Ressources
+## Mozilla Firefox
+- [Modèle des paramètres d’entreprise](https://github.com/mozilla/policy-templates)
+ 
+*Consulter les stratégies de groupe actives via `about:policies`.*
+
 ## Google Chrome
 - [Outils de configuration de Google Chrome sur Windows](https://support.google.com/chrome/a/topic/6242754)
 - [Gérer les règles de Chrome à l’aide du Registre Windows](https://support.google.com/chrome/a/answer/9131254?hl=fr)
 - [Liste des règles Chrome Enterprise](https://chromeenterprise.google/policies/)
+
+*Consulter les stratégies de groupe actives via `chrome://policy`.*
+
+## Microsoft Edge
+- [Microsoft Edge : Stratégies](https://docs.microsoft.com/fr-fr/deployedge/microsoft-edge-policies)
+
+*Consulter les stratégies de groupe actives via `edge://policy`.*
