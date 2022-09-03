@@ -7,6 +7,8 @@
 5. Autoriser l’exécution de scripts Powershell pour l’utilisateur courant avec `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 6. Lancer [le script d’installation des postes](https://github.com/at2f/config/blob/main/e-formation/script_installation_postes_e-formation.ps1).
 7. Configurer les stratégies de groupe dans « Modifier la stratégie de groupe » (`gpedit.msc`) avec [les paramètres suivants](https://github.com/at2f/config/blob/main/e-formation/Param%C3%A8tres%20de%20strat%C3%A9gie%20de%20groupe.md).
+8. Lancer le script `maintenance_manuelle_hebdomadaire.ps1` présent sur le bureau.
+10. Redémarrer l’ordinateur et attendre au moins une heure que le chiffrement soit terminé. (`manage-bde status` pour surveiller l’avancement)
 
 # Ressources
 ## Mozilla Firefox
