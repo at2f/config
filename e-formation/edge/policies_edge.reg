@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"RestoreOnStartup"=dword:00000004
+"ManagedFavorites"="[{\"toplevel_name\": \"Favoris e-formation\"}, {\"name\": \"Page de connexion Tic'nCube\", \"url\": \"https://at2f.ticncube.com\"}, {\"name\": \"Compte ProxyEPN (Cyber-Base)\", \"url\": \"https://at2f.proxyepn.org\"}, {\"name\": \"Occitanie e-formation\", \"url\": \"https://www.formation-occ.com\"}]"
+"ExtensionSettings"="{\"odfafepnkmbhccpbejgmiehpchacaeak\": {\"installation_mode\": \"force_installed\", \"update_url\": \"https://edge.microsoft.com/extensionwebstorebase/v1/crx\", \"toolbar_state\": \"force_shown\"}}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs]
+"1"="https://at2f.ticncube.com"
