@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-"RestoreOnStartup"=dword:00000004
-"ManagedBookmarks"="[{\"toplevel_name\": \"Favoris e-formation\"}, {\"name\": \"Page de connexion Tic'nCube\", \"url\": \"https://at2f.ticncube.com\"}, {\"name\": \"Compte ProxyEPN (Cyber-Base)\", \"url\": \"https://at2f.proxyepn.org\"}, {\"name\": \"Occitanie e-formation\", \"url\": \"https://www.formation-occ.com\"}]"
-"ExtensionSettings"="{\"cjpalhdlnbpafiamejdnhcphjbkeiagm\": {\"installation_mode\": \"force_installed\", \"toolbar_pin\": \"force_pinned\", \"update_url\": \"https://clients2.google.com/service/update2/crx\"}}"
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\RestoreOnStartupURLs]
-"1"="https://at2f.ticncube.com"
