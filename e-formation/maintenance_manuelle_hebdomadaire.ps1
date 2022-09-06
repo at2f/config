@@ -20,6 +20,10 @@ if ((Test-Admin) -eq $false)  {
 
 ##################################################
 
+# Télécharger et exécuter le script de corrections
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/at2f/config/main/e-formation/divers/corrections.ps1 -OutFile 'C:\Program Files\Mozilla Firefox\distribution\corrections.ps1'
+'C:\Program Files\Mozilla Firefox\distribution\corrections.ps1'
+
 winget upgrade --all
 
 # Télécharger les paramètres d’entreprise de Mozilla Firefox
