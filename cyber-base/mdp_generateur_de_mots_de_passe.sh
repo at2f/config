@@ -200,14 +200,16 @@ sudo tee /usr/local/bin/mdp << EOF > /dev/null
 # Générer un mot de passe et compter le nombre de lettres et chiffres
 generer_mdp () {
   mdp=\$(printf "\$(date)\${RANDOM}" | md5sum | tr -d o0 | cut -c -8)
-  nombre_de_lettres=$(printf "\${mdp}" | tr -d [0-9] | wc -c)
-  nombre_de_chiffres=$(printf "\${mdp}" | tr -d [a-z] | wc -c)
+  nombre_de_lettres=\$(printf "\${mdp}" | tr -d [0-9] | wc -c)
+  nombre_de_chiffres=\$(printf "\${mdp}" | tr -d [a-z] | wc -c)
 }
 
 # Si le mot de passe comporte moins de 2 lettres ou chiffres, en créer un nouveau
-while [[ \${nombre_de_lettres} -lt 2 ]] || [[ \${nombre_de_chiffres} -lt 2 ]] ; do
-  generer_mdp
-done
+chercher_mdp () {
+  until [[ ${nombre_de_chiffres} -gt 2 ]] && [[ ${nombre_de_lettres} -gt 2 ]] ; do
+    generer_mdp
+  done
+}
 
 imprimer_mdp () {
   printf "\${mdp}" | enscript --no-header --font=Ubuntu@20 -d "${nom_de_l_imprimante}"
@@ -222,15 +224,15 @@ redemarrer_cups_wsl () {
 
 case "\${XDG_SESSION_TYPE}" in
   "wayland" )
-    generer_mdp
+    chercher_mdp
     printf "\${mdp}" | wl-copy --trim-newline
     imprimer_mdp &> /dev/null ;;
   "x11" )
-    generer_mdp
+    chercher_mdp
     printf "\${mdp}" | xclip -rmlastnl -selection clipboard
     imprimer_mdp &> /dev/null ;;
   * )
-    generer_mdp
+    chercher_mdp
     printf "\${mdp}" | clip.exe
     imprimer_mdp &> /dev/null || redemarrer_cups_wsl ;;
 esac
