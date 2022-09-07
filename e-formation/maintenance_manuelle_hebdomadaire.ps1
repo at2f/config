@@ -16,13 +16,15 @@ if ((Test-Admin) -eq $false)  {
     exit
 }
 
-'running with full privileges'
+'Privilèges administrateurs accordés.'
 
 ##################################################
 
 # Télécharger et exécuter le script de corrections
+'Téléchargement et exécution du script de corrections.'
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/at2f/config/main/e-formation/divers/corrections.ps1 -OutFile 'C:\Program Files\Mozilla Firefox\distribution\corrections.ps1'
 'C:\Program Files\Mozilla Firefox\distribution\corrections.ps1'
+'Script de corrections terminé.'
 
 winget upgrade --all
 
