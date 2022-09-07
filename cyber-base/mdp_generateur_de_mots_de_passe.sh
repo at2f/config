@@ -206,7 +206,7 @@ generer_mdp () {
 
 # Si le mot de passe comporte moins de 2 lettres ou chiffres, en créer un nouveau
 chercher_mdp () {
-  until [[ ${nombre_de_chiffres} -gt 2 ]] && [[ ${nombre_de_lettres} -gt 2 ]] ; do
+  until [[ \${nombre_de_chiffres} -gt 2 ]] && [[ \${nombre_de_lettres} -gt 2 ]] ; do
     generer_mdp
   done
 }
