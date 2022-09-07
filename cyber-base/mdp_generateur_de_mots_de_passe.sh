@@ -195,7 +195,7 @@ installer_script_mdp () {
 sudo tee /usr/local/bin/mdp << EOF > /dev/null
 #!/usr/bin/bash
 # Génère un mot de passe aléatoire, l’imprime, et le copie dans le presse-papier
-# v1.3
+# v1.4
 
 # Générer un mot de passe et compter le nombre de lettres et chiffres
 generer_mdp () {
