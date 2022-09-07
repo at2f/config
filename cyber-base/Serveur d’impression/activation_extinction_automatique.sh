@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Créer le timer d’exécution du service d’extinction
-sudo tee -a /etc/systemd/system/systemctl_poweroff.timer << EOF > /dev/null
+sudo tee /etc/systemd/system/systemctl_poweroff.timer << EOF > /dev/null
 [Unit]
 Description=Extinction automatique du serveur d’impression
 
@@ -16,7 +16,7 @@ EOF
 
 
 # Créer le service d’extinction
-sudo tee -a /etc/systemd/system/systemctl_poweroff.service << EOF > /dev/null
+sudo tee /etc/systemd/system/systemctl_poweroff.service << EOF > /dev/null
 [Unit]
 Description=Extinction du serveur d’impression
 
