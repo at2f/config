@@ -65,5 +65,7 @@ mkdir 'C:\Program Files\Mozilla Firefox\distribution'
 # Chiffre le disque C: avec BitLocker (se lancera au redémarrage, et nécessite que le TPM soit activé dans le BIOS avant de lancer la commande)
 manage-bde -on C:
 
-# Télécharger le script de maintenance hebdomadaire et le placer sur le bureau
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/at2f/config/main/e-formation/maintenance_manuelle_hebdomadaire.ps1 -OutFile "$env:USERPROFILE\Desktop\maintenance_manuelle_hebdomadaire.ps1"
+# Télécharger le script qui appelera et élevera le script de maintenance hebdomadaire et le placer sur le bureau
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/at2f/config/main/e-formation/divers/maintenance_manuelle_hebdomadaire.ps1 -OutFile "$env:USERPROFILE\Desktop\maintenance_manuelle_hebdomadaire.ps1"
+# Télécharger le script de maintenance hebdomadaire et le placer dans le dossier utilisateur
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/at2f/config/main/e-formation/divers/script_maintenance-a-elever.ps1 -OutFile "$env:USERPROFILE\script_maintenance-a-elever.ps1"
