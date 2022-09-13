@@ -16,7 +16,7 @@ url_telechargement='https://dl.konicaminolta.eu/fr?tx_kmanacondaimport_downloadp
 # Se déplacer dans le répertoire temporaire
 ( cd "$(mktemp -d)" || exit 1
 # Télécharger l’archive des pilotes de l’imprimante
-wget -O "${nom_pilote}.tar.gz" "${url_telechargement}"
+wget -O "${nom_pilote}.tar.gz" "${url_telechargement}" || echo "L’URL renseignée est incorrecte, merci de corriger le script."
 # Extraire l’archive
 tar -xf "${nom_pilote}".tar.gz
 # Copier le fichier ppd dans le répertoire de configuration de CUPS
