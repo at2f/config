@@ -8,6 +8,7 @@
 6. Lancer [le script d’installation des postes](https://github.com/at2f/config/blob/main/e-formation/script_installation_postes_e-formation.ps1).
 7. Configurer les stratégies de groupe dans « Modifier la stratégie de groupe » (`gpedit.msc`) avec [les paramètres suivants](https://github.com/at2f/config/blob/main/e-formation/Param%C3%A8tres%20de%20strat%C3%A9gie%20de%20groupe.md).
 8. Lancer le script `maintenance_manuelle_hebdomadaire.ps1` présent sur le bureau.
+9. Installer Microsoft Office en téléchargeant l’[outil de déploiement](https://admin.microsoft.com/#/subscriptions), puis en suivant [le tutoriel suivant](https://docs.google.com/document/d/1raVn8bcfgSG9izhp-WfKvMbBZbZGmmKeLbbcRfGL7MU/edit#heading=h.gfwx3hncy8z1).
 10. Redémarrer l’ordinateur et attendre au moins une heure que le chiffrement soit terminé. (`manage-bde status` pour surveiller l’avancement)
 
 # Ressources
