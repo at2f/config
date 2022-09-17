@@ -16,7 +16,7 @@
     "DisablePrivateBrowsing": true,
     "DisableSafeMode": true,
     "DNSOverHTTPS": {
-      "Enabled": false,
+      "Enabled": true,
       "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
       "Locked": true
     },
