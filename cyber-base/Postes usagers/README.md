@@ -14,7 +14,7 @@ Si des modifications doivent être faites, les rajouter sur GitHub, dans le fich
 
 ## Configuration des paramètres d’entreprise de Firefox
 - Surveiller l’évolution des [options de configuration](https://github.com/mozilla/policy-templates).
-- Lorsque des choses doivent être modifiées, le faire directement sur GitHub, dans le fichier [policies.json](https://github.com/at2f/config/blob/main/cyber-base/Postes%20usagers/firefox/policies.json).
+- Lorsque des choses doivent être modifiées, le faire directement sur GitHub, dans le fichier [policies.json](https://github.com/at2f/config/blob/main/cyber-base/Postes%20usagers/firefox/policies.json) (vérifier que la syntaxe du fichier .json est bonne avec [un parser](https://jsonparser.org/)).
 - Le script de maintenance hebdomadaire téléchargera et installera la nouvelle version.
 
 ## Grammalecte
