@@ -9,20 +9,21 @@
       "Locked": true
     },
     "DisableSetDesktopBackground": true,
-    "DisableMasterPasswordCreation": true,
     "DisableDeveloperTools": true,
     "DisableFirefoxAccounts": true,
+    "DisableMasterPasswordCreation": true,
     "DisablePocket": true,
     "DisablePrivateBrowsing": true,
     "DisableSafeMode": true,
+    "DisableSystemAddonUpdate": true,
     "DNSOverHTTPS": {
       "Enabled": true,
       "ProviderURL": "https://family.cloudflare-dns.com/dns-query",
       "Locked": true
     },
     "EnableTrackingProtection": {
-      "Value": true,
-      "Locked": true,
+      "Value": false,
+      "Locked": false,
       "Cryptomining": true,
       "Fingerprinting": true
     },
@@ -30,25 +31,29 @@
       "*": {
         "blocked_install_message": "L'installation d'extensions n'est pas autorisée.",
         "installation_mode": "blocked"
-      },
+    },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
-      },
+    },
       "langpack-fr@firefox.mozilla.org": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/français-language-pack/latest.xpi"
-      },
+    },
       "French-GC@grammalecte.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/grammalecte-fr/latest.xpi"
+    },
+      "{036a55b4-5e72-4d05-a06c-cba2dfcc134a}": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/traduzir-paginas-web/latest.xpi"
       }
     },
     "ExtensionUpdate": true,
     "FirefoxHome": {
       "Search": true,
       "TopSites": false,
-      "SponsoredTopSites": false,     
+      "SponsoredTopSites": false,
       "Highlights": false,
       "Pocket": false,
       "SponsoredPocket": false,
@@ -59,15 +64,19 @@
       "Locked": true,
       "StartPage": "homepage-locked"
     },
-    "NetworkPrediction": false,
     "NewTabPage": true,
     "NoDefaultBookmarks": true,
     "OfferToSaveLogins": false,
     "OverridePostUpdatePage": "",
     "PasswordManagerEnabled": false,
     "PrimaryPassword": false,
+    "PDFjs": {
+      "Enabled": false,
+      "EnablePermissions": false
+    },
     "PopupBlocking": {
-      "Allow": ["https://mail.google.com"],
+      "Allow": ["https://mail.google.com",
+                "https://www.canva.com"],
       "Default": true,
       "Locked": false
     },
@@ -82,6 +91,16 @@
     "RequestedLocales": "fr-FR,fr,en-US,en",
     "SanitizeOnShutdown": true,
     "SearchBar": "unified",
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "Startpage",
+          "URLTemplate": "https://www.startpage.com/sp/search?query={searchTerms}&prfe=8d48ca6adae01eb75c25333c67841ceb81a522c0de4ff281a3d9405ccea07ab8d449902ec838dee3a9976bb0c676736d7ea3f0dc440f9f160da1d13091f58946f2565b014a377f9e300c62677d68&language=francais&t=device&lui=francais&cat=web&sc=4f9emuRQYhFa20&abp=-1",
+          "IconURL": "https://www.startpage.com/sp/cdn/favicons/favicon--default.ico"
+        }
+      ],
+      "Default": "Startpage"
+    },
     "SearchSuggestEnabled": true,
     "ShowHomeButton": false,
     "UserMessaging": {
@@ -89,7 +108,9 @@
       "ExtensionRecommendations": false,
       "FeatureRecommendations": false,
       "UrlbarInterventions": false,
-      "SkipOnboarding": false
-    }
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false
+    },
+    "UseSystemPrintDialog": false
   }
 }
