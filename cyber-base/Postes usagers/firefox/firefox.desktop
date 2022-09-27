@@ -51,6 +51,7 @@ StartupNotify=true
 Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;profile-manager-window;
+Icon=/usr/local/bin/Firefox/browser/chrome/icons/default/default128.png
 
 X-Desktop-File-Install-Version=0.26
 
